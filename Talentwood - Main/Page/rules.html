@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./Assest/rulesstyle.css" />
+    <title>Talentwood</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="header-menu">
+        <div class="logo">
+          <img src="./Assest/media/logo.png" alt="Logo" class="header-logo" />
+        </div>
+        <div class="nav-bar">
+          <ul class="nav-list">
+            <li><a href="./Homepage.html">Home</a></li>
+            <li><a href="./prize.html">Awards</a></li>
+            <li><a href="./rules.html">Guidelines</a></li>
+            <li><a href="./contactus.html">About Us</a></li>
+            <li>
+              <button class="btn" id="submitFilm">Submit Film</button>
+            </li>
+            <li>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                class="btn getAppBtn"
+              >
+                GET APP
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Get APP Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+          </div>
+        </div>
+      </div>
+      <div class="back-gradient">
+        <div class="rule-container">
+          <h1>Submission Guideline</h1>
+          <img src="./Assest/media/Line 11.png" width="30%" height="5px" />
+          <div class="guidelines1">
+            <div class="shape1">
+              <div class="circle1">1</div>
+              <div class="rectangle1">Eligibility</div>
+            </div>
+            <div class="content1-center">
+              <div class="content1">
+                <!-- <h3>To participate in the Talentwood Short Film Competition</h3> -->
+                <div class="content1-flex">
+                  <div class="list1">
+                    <ul class="list1-menu">
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          You are a emerging director with a passion for
+                          storytelling.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Your film is a short film, typically running under 10
+                          - 15 minutes.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Your film is an original work, and you have obtained
+                          all the necessary <br />
+                          rights and permissions for its submission.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="image1">
+                    <img
+                      src="./Images/group-people-on-gold-round-260nw-258522668__1_-removebg-preview 1.png"
+                      alt="image1"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="guidelines2">
+            <div class="shape2">
+              <div class="circle2">2</div>
+              <div class="rectangle2">Submission</div>
+            </div>
+            <div class="content2-center">
+              <div class="content2">
+                <!-- <h3>
+                  Ready to submit your film? Great! Here's what you need to do
+                </h3> -->
+                <div class="content2-flex">
+                  <div class="list2">
+                    <ul class="list2-menu">
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Visit the 'Submit Film' page on our website
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Fill out the required information, including your
+                          film's title, genre,<br />
+                          director's name, and a brief synopsis
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Upload your film in the specified format. (Details on
+                          the preferred <br />file format and size can be found
+                          on the submission page.)
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="image2">
+                    <img src="./Images/greatix-logo 1.png" alt="image2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="guidelines3">
+            <div class="shape3">
+              <div class="circle3">3</div>
+              <div class="rectangle3">Review and Selection</div>
+            </div>
+            <div class="content3-center">
+              <div class="content3">
+                <!-- <h3>
+                  To participate in the Talentwood Short Film Competition,
+                </h3> -->
+                <div class="content3-flex">
+                  <div class="list3">
+                    <ul class="list3-menu">
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Once your submission is in, our panel of judges will
+                          carefully review each entry.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          We'll be looking for creativity, storytelling, and
+                          technical excellence. <br />
+                          We'll keep you updated on the status of your
+                          submission via email.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Be patient as we go through all the entries; you'll be
+                          the first <br />
+                          to know if your film has made the cut
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="image3">
+                    <img
+                      src="./Images/processed-48c2f4cb-44e8-4661-8cc4-c9c8d143a819_LLsei1Ms-removebg-preview 1.png"
+                      alt="image3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="guidelines4">
+            <div class="shape4">
+              <div class="circle4">4</div>
+              <div class="rectangle4">Top 10 Selection</div>
+            </div>
+            <div class="content4-center">
+              <div class="content4">
+                <!-- <h3>
+                  To participate in the Talentwood Short Film Competition,
+                </h3> -->
+                <div class="content4-flex">
+                  <div class="list4">
+                    <ul class="list4-menu">
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          This is where things get exciting! The top 10 films
+                          will be determined <br />
+                          by the number of views and likes your film receives on
+                          our YouTube platform.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Your fans and supporters can make all the difference,
+                          so share <br />
+                          your film far and wide to increase your chances.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Stay tuned for the announcement of the top 10
+                          finalists <br />
+                          on our website and social media channels
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="image4">
+                    <img src="./Images/SL_052721_43350_02 1.png" alt="image4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="guidelines5">
+            <div class="shape5">
+              <div class="circle5">5</div>
+              <div class="rectangle5">Director's Challenge</div>
+            </div>
+            <div class="content5-center">
+              <div class="content5">
+                <div class="content5-flex">
+                  <div class="list5">
+                    <ul class="list5-menu">
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          If your film makes it to the top 10, you'll face the
+                          Director's Challenge.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          Each finalist will create one more short film based on
+                          a specific theme.
+                        </span>
+                      </li>
+                      <li>
+                        <img
+                          src="./Images/award-symbol (1) 6.svg"
+                          alt="award icon"
+                        />
+                        <span>
+                          The ultimate winner of this challenge will secure a
+                          once-in-a-lifetime opportunity <br />to direct a
+                          feature film under our production.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="image5">
+                    <img
+                      src="./Images/man-filming-with-professional-camera (1) 1.png"
+                      alt="image5"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="submission">
+            <div class="golden-line"></div>
+            <div class="submission-heading">Submission Guideline</div>
+            <div class="submission-guide">
+              <div class="protoype-images">
+                <div class="protoype1 active1">
+                  <img
+                    src="./Images/guide1.png"
+                    alt="Guide1"
+                    class="proto-img1"
+                  />
+                </div>
+                <div class="protoype2">
+                  <img
+                    src="./Images/Guide2.png"
+                    alt="Guide2"
+                    class="proto-img2"
+                  />
+                </div>
+                <div class="protoype3">
+                  <img
+                    src="./Images/Guide3.png"
+                    alt="Guide3"
+                    class="proto-img3"
+                  />
+                </div>
+                <div class="protoype4">
+                  <img
+                    src="./Images/Guide4.png"
+                    alt="Guide4"
+                    class="proto-img4"
+                  />
+                </div>
+              </div>
+              <div class="submission-rules">
+                <div class="rule1 active">
+                  <button class="num1" id="transitionButton">1</button>
+                  <div class="step1" id="transitionElement">
+                    <h4>Originality Matters:</h4>
+                    <p>
+                      We celebrate originality and creativity. All submissions
+                      must be entirely
+                      <!-- <br /> -->
+                      your own work. Plagiarism or the use of copyrighted
+                      material without
+                      <!-- <br /> -->
+                      permission is not allowed.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="rule2">
+                  <button class="num2" id="transitionButton">2</button>
+                  <div class="step2" id="transitionElement">
+                    <h4>Film Length:</h4>
+                    <p>
+                      To keep the competition engaging and accessible, short
+                      films should
+                      <!-- <br /> -->
+                      not exceed 20 minutes in length. Concise storytelling
+                      often leaves a
+                      <!-- <br /> -->
+                      lasting impact.
+                      <!-- <br /> -->
+                    </p>
+                  </div>
+                </div>
+                <div class="rule3">
+                  <button class="num3" id="transitionButton">3</button>
+                  <div class="step3" id="transitionElement">
+                    <h4>Genere Freedom:</h4>
+                    <p>
+                      We welcome short films of all genres – drama, comedy,
+                      animation,
+                      <!-- <br /> -->
+                      documentary, and more. Let your imagination run wild and
+                      choose the
+                      <!-- <br /> -->
+                      genre that best fits your vision.
+                    </p>
+                  </div>
+                </div>
+                <div class="rule4">
+                  <button class="num4" id="transitionButton">4</button>
+                  <div class="step4" id="transitionElement">
+                    <h4>Rights and Permissions:</h4>
+                    <p>
+                      By submitting your film, you grant us the right to
+                      showcase it on our
+                      <!-- <br /> -->
+                      platform and during events. Ensure you have all necessary
+                      permissions
+                      <!-- <br /> -->
+                      for any copyrighted material used in your film.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-bg">
+        <div class="container">
+          <div class="left-footer">
+            <div class="about">
+              <div class="aboutuscontent">
+                <h3>Talentwood</h3>
+                <p>
+                  Talentwood's competition and awards program stands as a
+                  remarkable opportunity to celebrate the art of filmmaking
+                  while fostering the growth of the film industry. Beyond
+                  recognition and accolades, Talentwood actively encourages
+                  filmmakers to pursue their passion and share their compelling
+                  stories through film.
+                </p>
+              </div>
+              <div class="aboutlist">
+                <ul>
+                  <li><a href="./Homepage.html">Home</a></li>
+                  <li><a href="./prize.html">Awards</a></li>
+                  <li><a href="./rules.html">Guidelines</a></li>
+                  <li><a href="./contactus.html">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-location">
+              <img
+                src="./Assest/media/map.png"
+                width="auto"
+                height="auto"
+                id="mapIcon"
+              />
+              <div class="address">
+                <h2>Talentwood</h2>
+                <p>
+                  No.24 A, 3rd Main Road,<br />
+                  KK Nagar, Sreenivasapuram,<br />
+                  Guduvancherry 603 202.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4
+          style="
+            color: white;
+            padding-bottom: 25px;
+            text-align: center;
+            font-size: 12px;
+          "
+        >
+          © Copyright 2023 - Stage A Dream Pvt. Ltd. All rights reserved
+        </h4>
+      </div>
+    </footer>
+    <script src="./scriptrule.js"></script>
+    <script src="./Script.js"></script>
+  </body>
+</html>
+
+<!-- <div class="back-gradient">
+        <div class="main-one">
+
+          <div class="section1">
+            <h3>RULES</h3>
+                  <h2>AND</h2>
+            <h1>SUBMISSON GUIDELINES</h1>
+            <img src="./Assest/media/Line 11.png" width="500px" />
+          </div>
+  
+          <div class="text section2">
+            <h3>Who can enter the Talentwood Awards?</h3>
+            <h4>
+              The Talentwood Awards is open to all independent short
+              films/filmmakers anywhere in the world that meet the following
+              criteria:
+            </h4>
+            <ul>
+              <li>
+                Short films: Total runtime for shorts may be no more than 40
+                minutes
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="main-two">
+            <div class="section2 three" id="firstContent">
+              <h3>What do I need to do to enter the Talentwood Awards?</h3>
+              <ol>
+                <li>Complete the entry form and submit your film</li>
+                <li>Arrange online payment of entry fee</li>
+                <li>Submit completed entry form and entry fee</li>
+              </ol>
+            </div>
+  
+            <div class="sidebar">
+              <lottie-player
+                src="https://lottie.host/2a316dc4-a404-4a57-ba8b-57454814b981/h58SaQZTXQ.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+                direction="1"
+                mode="normal"
+              ></lottie-player>
+              <div class="sidebar-text">
+                <h2>1. Select the category or categories you wish to enter</h2>
+                <h4>
+                  Select the category or categories you wish to enter, based on
+                  which category most applies to your film or to your marketing
+                  strategies. You may enter as many categories as you like.
+                </h4>
+              </div>
+            </div>
+  
+            <div class="sidebar">
+              <lottie-player
+                src="https://lottie.host/cd2c570a-faf4-4d67-bb28-fd5463e38830/w6VVUitsxG.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+                direction="1"
+                mode="normal"
+                id="firstGif"
+              ></lottie-player>
+              <div class="sidebar-text" id="firstRow">
+                <h2>1. Complete the entry form</h2>
+                <h4>
+                  Complete the <a>Online entry form</a>, which includes a link to
+                  your film. Only one entry form is required regardless of the
+                  number of categories you wish to enter. However, if you wish to
+                  enter more than one film, you must complete a different entry
+                  form for each title.
+                </h4>
+              </div>
+            </div>
+            <div class="sidebar">
+              <div class="sidebar-text" id="secondRow">
+                <h2>2. Arrange online payment of entry fee</h2>
+                <h4>The 2023 Final Deadline entry fees are as follows:</h4>
+                <li>Short Film categories: 1,000/-</li>
+              </div>
+              <lottie-player
+                src="https://lottie.host/ac57a9d8-47a5-4ec6-ad3b-0a29318b2168/797jAxn7vL.json"
+                background="transparent"
+                speed=".4"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+                direction="1"
+                mode="normal"
+                id="secondGif"
+              ></lottie-player>
+            </div>
+            <div class="sidebar">
+              <lottie-player
+                src="https://lottie.host/c1f89e95-3f5a-45b4-b731-76fd131a66e2/VtG2mmT59f.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+                direction="1"
+                mode="normal"
+                id="thirdGif"
+              ></lottie-player>
+              <div class="sidebar-text" id="thirdRow">
+                <h2>3. Submit completed entry form and entry fee</h2>
+                <h4>
+                  Attach your completed entry form along with proof of payment (if
+                  required) to an email addressed to [Email Address]. In the
+                  subject line of the email, please include "[Your Name] -
+                  [Event/Contest/Application Name] Entry." If there are any
+                  additional documents or materials to be submitted, please
+                  include them as specified in the entry guidelines
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="submission">
+            <div class="submission-heading">Submission Guideline</div>
+            <div class="submission-guide">
+              <div class="protoype-images">
+                <div class="protoype1 active1">
+                  <img
+                    src="./Images/guide1.png"
+                    alt="Guide1"
+                    class="proto-img1"
+                  />
+                </div>
+                <div class="protoype2">
+                  <img
+                    src="./Images/Guide2.png"
+                    alt="Guide2"
+                    class="proto-img2"
+                  />
+                </div>
+                <div class="protoype3">
+                  <img
+                    src="./Images/Guide3.png"
+                    alt="Guide3"
+                    class="proto-img3"
+                  />
+                </div>
+                <div class="protoype4">
+                  <img
+                    src="./Images/Guide4.png"
+                    alt="Guide4"
+                    class="proto-img4"
+                  />
+                </div>
+              </div>
+              <div class="submission-rules">
+                <div class="rule1 active">
+                  <button class="num1" id="transitionButton">1</button>
+                  <div class="step1" id="transitionElement">
+                    <h4>Originality Matters:</h4>
+                    <p>
+                      We celebrate originality and creativity. All submissions
+                      must be entirely
+                      <br />
+                      your own work. Plagiarism or the use of copyrighted material
+                      without
+                      <br />
+                      permission is not allowed.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="rule2">
+                  <button class="num2" id="transitionButton">2</button>
+                  <div class="step2" id="transitionElement">
+                    <h4>Film Length:</h4>
+                    <p>
+                      To keep the competition engaging and accessible, short films
+                      should
+                      <br />
+                      not exceed 20 minutes in length. Concise storytelling often
+                      leaves a
+                      <br />
+                      lasting impact.
+                      <br />
+                    </p>
+                  </div>
+                </div>
+                <div class="rule3">
+                  <button class="num3" id="transitionButton">3</button>
+                  <div class="step3" id="transitionElement">
+                    <h4>Genere Freedom:</h4>
+                    <p>
+                      We welcome short films of all genres – drama, comedy,
+                      animation,
+                      <br />
+                      documentary, and more. Let your imagination run wild and
+                      choose the
+                      <br />
+                      genre that best fits your vision.
+                    </p>
+                  </div>
+                </div>
+                <div class="rule4">
+                  <button class="num4" id="transitionButton">4</button>
+                  <div class="step4" id="transitionElement">
+                    <h4>Rights and Permissions:</h4>
+                    <p>
+                      By submitting your film, you grant us the right to showcase
+                      it on our
+                      <br />
+                      platform and during events. Ensure you have all necessary
+                      permissions
+                      <br />
+                      for any copyrighted material used in your film.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->

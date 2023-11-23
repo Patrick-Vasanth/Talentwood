@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short Film Submission Guidelines</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .film-card {
+        background-color: #f4f4f4;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s, transform 1s;
+      }
+
+      .film-card.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .animation-card {
+        animation: rotateScale 1s ease-in-out;
+      }
+
+      .documentary-card {
+        animation: fadeInRight 1s ease-in-out;
+      }
+
+      .fiction-card {
+        animation: bounceInDown 1s ease-in-out;
+      }
+
+      .experimental-card {
+        animation: fadeInLeft 1s ease-in-out;
+      }
+
+      .comedy-card {
+        animation: zoomIn 1s ease-in-out;
+      }
+
+      @keyframes rotateScale {
+        0% {
+          transform: rotate(0) scale(0);
+        }
+        50% {
+          transform: rotate(180deg) scale(1.2);
+        }
+        100% {
+          transform: rotate(360deg) scale(1);
+        }
+      }
+
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes bounceInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-500px);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(30px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes zoomIn {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Short Film Submission Guidelines</h1>
+    </header>
+
+    <div class="film-card animation-card" id="animationCard">
+      <h2>Animation</h2>
+      <p>Submission guidelines for animation short films...</p>
+    </div>
+
+    <div class="film-card documentary-card" id="documentaryCard">
+      <h2>Documentary</h2>
+      <p>Submission guidelines for documentary short films...</p>
+    </div>
+
+    <div class="film-card fiction-card" id="fictionCard">
+      <h2>Fiction</h2>
+      <p>Submission guidelines for fiction short films...</p>
+    </div>
+
+    <div class="film-card experimental-card" id="experimentalCard">
+      <h2>Experimental</h2>
+      <p>Submission guidelines for experimental short films...</p>
+    </div>
+
+    <div class="film-card comedy-card" id="comedyCard">
+      <h2>Comedy</h2>
+      <p>Submission guidelines for comedy short films...</p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filmCards = document.querySelectorAll(".film-card");
+
+        window.addEventListener("scroll", function () {
+          filmCards.forEach(function (card) {
+            if (isInViewport(card)) {
+              card.classList.add("show");
+            } else {
+              card.classList.remove("show");
+            }
+          });
+        });
+
+        function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+              (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

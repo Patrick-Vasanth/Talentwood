@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/196dace993.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./Assest/prize.css" />
+    <link rel="stylesheet" href="./Assest/demo.css" />
+    <title>Talentwood</title>
+  </head>
+  <body>
+    <div class="main-bg">
+      <div class="header-menu">
+        <div class="logo">
+          <img src="./Assest/media/logo.png" alt="Logo" class="header-logo" />
+        </div>
+        <div class="nav-bar">
+          <ul class="nav-list">
+            <li><a href="./Homepage.html">Home</a></li>
+            <li><a href="./prize.html">Awards</a></li>
+            <li><a href="./rules.html">Guidelines</a></li>
+            <li><a href="./contactus.html">About Us</a></li>
+            <li>
+              <button class="btn" id="submitFilm">Submit Film</button>
+            </li>
+            <li>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                class="btn getAppBtn"
+              >
+                GET APP
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="main-banner">
+        <div class="prizeban">
+          <img src="./Assest/media/2024-GRAND-PRIZE-PACKAGE-14-9-2023.png" />
+          <br />
+          <img src="./Assest/media/RS-5-00-000-14-9-2023.png" />
+        </div>
+      </div> -->
+      <!-- Get APP Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-banner">
+        <div class="celebration-heading">
+          Celebrating Excellence
+          <br />
+          Beyond the win
+        </div>
+        <img
+          src="./Assest/media/Line 11.png"
+          width="170px"
+          height="5px"
+          style="margin-left: 5%"
+        />
+        <div class="awards-content">
+          <div class="awdContent">
+            <img src="./Images/Group 125.png" alt="nail" class="nail1" />
+            <img src="./Images/Group 125.png" alt="nail" class="nail2" />
+            <div>
+              At Talentwood, we believe that every participant is a star in
+              their own right. Even if the laurels of victory may not have been
+              bestowed upon you, your exceptional talent, dedication, and
+              commitment deserve recognition. That's why we're excited to
+              introduce a special feature on our application – a platform where
+              the unsung heroes, the runners-up, and the deserving nominees get
+              the spotlight they truly deserve.
+            </div>
+            <img src="./Images/Group 125.png" alt="nail" class="nail3" />
+            <img src="./Images/Group 125.png" alt="nail" class="nail4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="back-img">
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam
+        cum, inventore beatae a dolor! Aliquam molestiae odit, asperiores,
+        praesentium laboriosam laudantium deserunt necessitatibus magni,
+        molestias vero animi possimus ab!
+      </h1>
+    </div> -->
+      <!-- <div class="main-sec">
+      <div class="award-section">
+        <h1>Award Categories</h1>
+        <h3>RECOGNIZING EXCELLENCE IN <br />INDEPENDENT FILMMAKING</h3>
+        <h4>
+          Category winners in Talentwood's competition will receive a
+          substantial cash prize of ₹ 10,000 each, in addition to surprise
+          prizes that await them. These rewards recognize and celebrate the
+          outstanding achievements of filmmakers across various categories,
+          adding to the excitement and motivation to participate.
+        </h4>
+      </div>
+      <div class="award-category">
+        <h3>Short Film Award Categories</h3>
+        <div class="line"></div>
+        <ol>
+          <li>
+            <img
+              src="./Assest/media/award-symbol (1) 1.png"
+              id="listImg"
+            /><span> Best Direction </span>
+          </li>
+          <li>
+            <img src="./Assest/media/award-symbol (1) 1.png" id="listImg" />
+            <span> Best Screenplay </span>
+          </li>
+          <li>
+            <img
+              src="./Assest/media/award-symbol (1) 1.png"
+              id="listImg"
+            /><span>Best Cinematography</span>
+          </li>
+          <li>
+            <img
+              src="./Assest/media/award-symbol (1) 1.png"
+              id="listImg"
+            /><span>Best Actor</span>
+          </li>
+          <li>
+            <img
+              src="./Assest/media/award-symbol (1) 1.png"
+              id="listImg"
+            /><span>Best Actress </span>
+          </li>
+          <li>
+            <img src="./Assest/media/award-symbol (1) 1.png" id="listImg" />
+            <span>Best Supporting Actor</span>
+          </li>
+          <li>
+            <img src="./Assest/media/award-symbol (1) 1.png" id="listImg" />
+            <span> Best Supporting Actress </span>
+          </li>
+          <li>
+            <img
+              src="./Assest/media/award-symbol (1) 1.png"
+              id="listImg"
+            /><span> Best Comedian </span>
+          </li>
+          <li>
+            <img
+              src="./Assest/media/award-symbol (1) 1.png"
+              id="listImg"
+            /><span> Best Music Director </span>
+          </li>
+        </ol>
+      </div>
+    </div> -->
+      <div class="recogonization">
+        <div class="ribbon1">
+          <img
+            src="./Images/966__3_-removebg-preview3-31-Prize.svg"
+            alt="ribbon"
+            width="230px"
+          />
+        </div>
+        <div class="ribbonContent">
+          <h4>Recognition Beyond Winning</h4>
+
+          <img
+            src="./Images/966__1_-removebg-preview.png"
+            alt="main ribbon"
+            width="60%"
+          />
+          <div>
+            " We understand the efforts, passion, and creativity you poured into
+            your submissions. It's our commitment to honor and celebrate your
+            talent, even if the title eluded you. Through our innovative system,
+            we'll showcase and acknowledge outstanding performers across various
+            categories. "
+          </div>
+          <div>
+            <img
+              src="./Images/Untitled_design__2_-removebg-preview4-31-Prize.svg"
+              alt="small ribbon"
+              class="small1"
+            />
+            <img
+              src="./Images/Untitled_design__2_-removebg-preview4-31-Prize.svg"
+              alt="small ribbon"
+              class="small2"
+            />
+            <button class="btn know-morebtn">Know More</button>
+            <img
+              src="./Images/Untitled_design__2_-removebg-preview4-31-Prize.svg"
+              alt="small ribbon"
+              class="small3"
+            />
+            <img
+              src="./Images/Untitled_design__2_-removebg-preview4-31-Prize.svg"
+              alt="small ribbon"
+              class="small4"
+            />
+          </div>
+        </div>
+        <div class="ribbon2">
+          <img
+            src="./Images/966__3_-removebg-preview3-31-Prize.svg"
+            alt="ribbon"
+            width="230px"
+          />
+        </div>
+      </div>
+
+      <!-- <div class="award-category1">
+        <div id="root"></div>
+      </div> -->
+      <div class="awards">
+        <section class="slider-container">
+          <div class="slider-images">
+            <div class="slider-img active">
+              <img
+                src="./Images/chadwick-boseman-male-celebrities-boys-hd-wallpaper-preview.jpg"
+                alt="chadwick"
+              />
+              <h2>Best Actor</h2>
+              <div class="details">
+                <h3>Mr.Chadwick</h3>
+                <p>Best Actor</p>
+              </div>
+            </div>
+            <div class="slider-img">
+              <img
+                src="./Images/women-model-portrait-looking-at-viewer-wallpaper-preview.jpg"
+                alt="Sai Pallavi"
+              />
+              <h2>Best Actress</h2>
+              <div class="details">
+                <h3>Mrs.Pallavi</h3>
+                <p>Best Actress</p>
+              </div>
+            </div>
+            <div class="slider-img">
+              <img
+                src="./Images/desktop-wallpaper-shahrukh-khan-best-shahrukh-khan-mobile.jpg"
+                alt="Srk"
+              />
+              <h2>Best Director</h2>
+              <div class="details">
+                <h3>Mr.Khan</h3>
+                <p>Best Director</p>
+              </div>
+            </div>
+            <div class="slider-img">
+              <img src="./Images/wp4721526.jpg" alt="Emmawatsom" />
+              <h2>Best Side Role(female)</h2>
+              <div class="details">
+                <h3>Mrs.Emma</h3>
+                <p>Best Supporting Character</p>
+              </div>
+            </div>
+            <div class="slider-img">
+              <img
+                src="./Images/chadwick-boseman-male-celebrities-boys-hd-wallpaper-preview.jpg"
+                alt="chadwick5"
+              />
+              <h2>Best Actor</h2>
+              <div class="details">
+                <h3>Mr.Chadwick</h3>
+                <p>Best Actor</p>
+              </div>
+            </div>
+            <div class="slider-img">
+              <img
+                src="./Images/chadwick-boseman-male-celebrities-boys-hd-wallpaper-preview.jpg"
+                alt="chadwick6"
+              />
+              <h2>Best Actor</h2>
+              <div class="details">
+                <h3>Mr.Chadwick</h3>
+                <p>Best Actor</p>
+              </div>
+            </div>
+            <div class="slider-img">
+              <img
+                src="./Images/chadwick-boseman-male-celebrities-boys-hd-wallpaper-preview.jpg"
+                alt="chadwick7"
+              />
+              <h2>Best Actor</h2>
+              <div class="details">
+                <h3>Mr.Chadwick</h3>
+                <p>Best Actor</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="top-categories">
+        <h1>Awards Categories</h1>
+        <img src="./Images/Line 11.png" width="300px" height="5px" />
+        <div class="list-categories">
+          <div class="categories-row1">
+            <ul class="awards-list">
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Direction
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Actor
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Supporting Actress
+              </li>
+            </ul>
+          </div>
+          <div class="categories-row2">
+            <ul class="awards-list">
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Screenplay
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Actress
+              </li>
+            </ul>
+          </div>
+          <div class="categories-row3">
+            <ul class="awards-list">
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Cinematography
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Supporting Actor
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right" style="color: #ffd200"></i>
+                Best Composer
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-bg">
+        <div class="container">
+          <div class="left-footer">
+            <div class="about">
+              <div class="aboutuscontent">
+                <h3>Talentwood</h3>
+                <p>
+                  Talentwood's competition and awards program stands as a
+                  remarkable opportunity to celebrate the art of filmmaking
+                  while fostering the growth of the film industry. Beyond
+                  recognition and accolades, Talentwood actively encourages
+                  filmmakers to pursue their passion and share their compelling
+                  stories through film.
+                </p>
+              </div>
+              <div class="aboutlist">
+                <ul>
+                  <li><a href="./Homepage.html">Home</a></li>
+                  <li><a href="./prize.html">Awards</a></li>
+                  <li><a href="./rules.html">Guidelines</a></li>
+                  <li><a href="./contactus.html">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-location">
+              <img
+                src="./Assest/media/map.png"
+                width="auto"
+                height="auto"
+                id="mapIcon"
+              />
+              <div class="address">
+                <h2>Talentwood</h2>
+                <p>
+                  No.24 A, 3rd Main Road,<br />
+                  KK Nagar, Sreenivasapuram,<br />
+                  Guduvancherry 603 202.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4
+          style="
+            color: white;
+            padding-bottom: 25px;
+            text-align: center;
+            font-size: 12px;
+          "
+        >
+          © Copyright 2023 - Stage A Dream Pvt. Ltd. All rights reserved
+        </h4>
+      </div>
+    </footer>
+    <script src="./scriptrule.js"></script>
+    <script src="./Script.js"></script>
+    <!-- <script src="./DemoScript.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

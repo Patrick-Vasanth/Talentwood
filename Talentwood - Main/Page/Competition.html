@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competition Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/196dace993.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./Assest/Competition.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="head-main">
+        <div class="header-menu">
+          <div class="logo">
+            <img src="./Assest/media/logo.png" alt="Logo" class="header-logo" />
+          </div>
+          <div class="nav-bar">
+            <ul class="nav-list">
+              <li><a href="./Homepage.html">Home</a></li>
+              <li><a href="./prize.html">Awards</a></li>
+              <li><a href="./rules.html">Guidelines</a></li>
+              <li><a href="./contactus.html">About Us</a></li>
+              <li>
+                <button class="btn" id="submitFilm">Submit Film</button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  class="btn getAppBtn"
+                >
+                  GET APP
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Get APP Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+            </div>
+          </div>
+        </div>
+        <div class="competitions">
+          <div class="process-heading">
+            <p>
+              The competition process you've outlined sounds engaging and <br />
+              supportive of emerging filmmakers. Here's a breakdown of how
+              <br />
+              the competition works:
+            </p>
+          </div>
+          <div class="competition-rules">
+            <div class="rules" id="comp-rules">
+              <div class="prnt-1">
+                <div class="competition-heading">Competition Rules</div>
+                <h3>Film Submission:</h3>
+                <p>
+                  Filmmakers from around the world submit their films to
+                  <br />
+                  Talentwood's competition.
+                </p>
+                <div class="lotify-gif">
+                  <lottie-player
+                    src="https://lottie.host/f278ea41-70c7-4a77-9d3e-a58deef04cbf/7xRb5vE7TE.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 60%; height: 60%"
+                    loop
+                    autoplay
+                  ></lottie-player>
+                </div>
+              </div>
+              <div class="prnt-1">
+                <div class="competition-heading">
+                  Selection of Top Directors
+                </div>
+
+                <p>
+                  After the submission period, a panel of judges review the
+                  films and
+                  <br />
+                  selects the top 10 directors whose work stands out.
+                </p>
+                <div class="lotify-gif">
+                  <lottie-player
+                    src="https://lottie.host/67f06fa1-d780-411b-b046-cc9a57a9b526/eiQ5aLh2bh.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 50%; height: 50%"
+                    loop
+                    autoplay
+                    direction="1"
+                    mode="normal"
+                  ></lottie-player>
+                </div>
+              </div>
+              <div class="prnt-1">
+                <div class="competition-heading">
+                  Crowd Funding for 30-Minute Films
+                </div>
+                <p>
+                  The 10 selected directors are given opportunity to direct a
+                  <br />
+                  30-minutes duration film.
+                </p>
+                <p>
+                  These filmmakers embark on a crowd funding campagin to secure
+                  <br />
+                  the necessaryfunds for their projects. This approach empowers
+                  <br />
+                  filmmakers to engage with their audience and generate support
+                  for
+                  <br />
+                  their creative endeavors.
+                </p>
+                <div class="lotify-gif">
+                  <lottie-player
+                    src="https://lottie.host/f304d495-25f5-41e1-bdc1-23bbc7e39ffd/RJrNW8I87J.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 30%; height: 30%"
+                    loop
+                    autoplay
+                    direction="1"
+                    mode="normal"
+                  ></lottie-player>
+                </div>
+              </div>
+              <div class="prnt-1">
+                <div class="competition-heading">
+                  Telecast and User Engagement:
+                </div>
+                <p>
+                  Once the 10 films are produced,they are telecast on
+                  Talentwoood's application and
+                  <br />
+                  social media platforms.
+                </p>
+                <p>
+                  User engagement plays a cruicial role in determining the
+                  winner. Users can
+                  <br />
+                  express their appreciation for the films through likes,share
+                  and comments.
+                </p>
+                <div class="lotify-gif">
+                  <lottie-player
+                    src="https://lottie.host/03241a67-6d0c-4f78-b4a8-a4b931ba2068/4lXT8X3DUi.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 35%; height: 35%"
+                    loop
+                    autoplay
+                    direction="1"
+                    mode="normal"
+                  ></lottie-player>
+                </div>
+              </div>
+              <div class="prnt-1">
+                <div class="competition-heading">Winner Announcement:</div>
+                <p>
+                  The film that receives the highest user response, as measured
+                  by likes,
+                  <br />
+                  shares,and comments, is declared the winner of the
+                  competition.
+                </p>
+                <div class="lotify-gif">
+                  <lottie-player
+                    src="https://lottie.host/4870fb7b-bd94-4894-8fea-95a386e7f8a0/v4dwsdZHDj.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 50%; height: 50%"
+                    loop
+                    autoplay
+                    direction="1"
+                    mode="normal"
+                  ></lottie-player>
+                </div>
+              </div>
+              <div class="prnt-1">
+                <div class="competition-heading">
+                  <div>
+                    <i class="fa-solid fa-arrow-left arrow-icon"></i>
+                  </div>
+                  Winner Announcement:
+                </div>
+                <p>
+                  The Winning film receives 40% of the cash prize and rewards,
+                  recognizing
+                  <br />
+                  the director's creative achievement.
+                </p>
+                Producers of the winning film are awarded 50% of the cash prize,
+                <br />
+                acknowledging their support and contribution to the project.
+                <p>
+                  Additionally, one execptional director may be chosen to direct
+                  a future
+                  <br />
+                  film, offering an exciting opportunity for the career growth.
+                </p>
+                <div class="lotify-gif">
+                  <lottie-player
+                    src="https://lottie.host/20982030-3226-4226-8d55-376e2b0121c0/vmuFRK8men.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 30%; height: 30%"
+                    loop
+                    autoplay
+                    direction="1"
+                    mode="normal"
+                  ></lottie-player>
+                </div>
+                <div class="agree">
+                  <div class="btn" id="agreeBtn">Agree and Continue</div>
+                </div>
+              </div>
+            </div>
+            <div class="previousNext-btn">
+              <button class="btn" id="prevBtn">&laquo;Previous</button>
+              <button class="btn" id="nextBtn">&raquo;Next</button>
+            </div>
+            <div class="container-submission">
+              <div class="form-outer">
+                <div class="progress-container">
+                  <div class="step-content"></div>
+                  <div class="progress-bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+
+                <form action="#">
+                  <!-- Page 1 -->
+                  <div class="page">
+                    <div class="field" id="page1-filed">
+                      <div class="label">Project title:(English)</div>
+                      <input type="text" class="submission-input" />
+                    </div>
+                    <div class="field" id="page1-filed">
+                      <div class="label">Brief Synopsis:(English)</div>
+                      <textarea
+                        name="briefSynopsis"
+                        cols="40"
+                        rows="3"
+                        class="submission-input"
+                      ></textarea>
+                    </div>
+                    <div class="field" id="checkbox-field">
+                      <input type="checkbox" />
+                      <div class="label">
+                        My Project also has a non-English Title and Synopsis
+                      </div>
+                    </div>
+                    <div class="field" id="page1-filed">
+                      <div class="label">Instagram</div>
+                      <input
+                        type="url"
+                        placeholder="http://"
+                        class="submission-input"
+                      />
+                    </div>
+                    <div class="field" id="page1-filed">
+                      <div class="label">X</div>
+                      <input
+                        type="url"
+                        placeholder="http://"
+                        class="submission-input"
+                      />
+                    </div>
+                  </div>
+                  <!-- Page 2 -->
+                  <div class="page">
+                    <div class="field">
+                      <div class="fullName">
+                        <div>
+                          <div class="label">First Name</div>
+                          <input
+                            type="text"
+                            class="submission-input2"
+                            id="fullDetails1"
+                          />
+                        </div>
+                        <div>
+                          <div class="label">Last Name</div>
+                          <input
+                            type="text"
+                            class="submission-input2"
+                            id="fullDetails2"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="label">Email</div>
+                      <input type="email" class="submission-input2" />
+                    </div>
+                    <div class="field">
+                      <div class="label">Phone Number</div>
+                      <input type="tel" class="submission-input2" />
+                    </div>
+                    <div class="field">
+                      <div class="label">Address</div>
+                      <input type="text" class="submission-input2" />
+                      <br />
+                      <input type="text" class="submission-input2" />
+                    </div>
+                    <div class="field">
+                      <div class="postalAddress">
+                        <input
+                          type="text"
+                          placeholder="City"
+                          class="submission-input2"
+                          id="city-field"
+                        />
+
+                        <input
+                          type="text"
+                          placeholder="State"
+                          class="submission-input2"
+                          id="state-field"
+                        />
+
+                        <input
+                          type="text"
+                          placeholder="Zip Code"
+                          class="submission-input2"
+                          id="zipCode-field"
+                        />
+                      </div>
+                    </div>
+                    <div class="field">
+                      <select
+                        id="countryDropdown"
+                        class="submission-input2"
+                      ></select>
+                    </div>
+                  </div>
+                  <!-- Page 3 -->
+                  <div class="page">
+                    <div class="field">
+                      <div class="label">Director /s</div>
+                      <input type="text" class="submission-input3" />
+                      <div class="addRemovebtn">
+                        <button class="addValue">Add</button>
+                        <button class="removeValue">Remove</button>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="label">Writer /s</div>
+                      <input type="text" class="submission-input3" />
+                      <div class="addRemovebtn">
+                        <button class="addValue">Add</button>
+                        <button class="removeValue">Remove</button>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="label">Producer /s</div>
+                      <input type="text" class="submission-input3" />
+                      <div class="addRemovebtn">
+                        <button class="addValue">Add</button>
+                        <button class="removeValue">Remove</button>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="label">Key Cast</div>
+                      <input type="text" class="submission-input3" />
+                      <div class="addRemovebtn">
+                        <button class="addValue">Add</button>
+                        <button class="removeValue">Remove</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- page 4 -->
+                  <div class="page" id="page4">
+                    <div class="field">
+                      <div class="label">
+                        If your video is on Google drive or any cloud <br />
+                        storage, simply paste the URL
+                      </div>
+                      <input
+                        type="url"
+                        placeholder="http://"
+                        class="submission-input"
+                      />
+                    </div>
+                    <div class="field" id="checkbox-field">
+                      <input type="checkbox" />
+                      <div class="label">
+                        I agree that Talentwood Awards can use my film
+                        (including clips, trailer and poster) for screenings
+                        and/or promotional purposes
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Page 5 -->
+                  <div class="page" id="payDetails">
+                    <div class="payment">
+                      <div class="field">
+                        <div class="payementLabel">
+                          <div>
+                            <i class="fa-solid fa-arrow-left arrow"></i>
+                          </div>
+                          <div class="qrScan">
+                            Please Scan the QR for Payment
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field" id="qrScanner">
+                        <img
+                          src="./Images/png-clipart-qr-code-information-qr-code-android-qrcode-text-rectangle-thumbnail-removebg-preview 1.png"
+                          alt="QR SCANNER"
+                        />
+                      </div>
+                      <div class="field" id="paySubmit">
+                        <button class="submitbtn">Agree and Continue</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field btns">
+                    <button class="prev-1 prev">Previous</button>
+                    <button class="next-1 next">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bg">
+        <div class="container">
+          <div class="left-footer">
+            <div class="about">
+              <div class="aboutuscontent">
+                <h3>Talentwood</h3>
+                <p>
+                  Talentwood's competition and awards program stands as a
+                  remarkable opportunity to celebrate the art of filmmaking
+                  while fostering the growth of the film industry. Beyond
+                  recognition and accolades, Talentwood actively encourages
+                  filmmakers to pursue their passion and share their compelling
+                  stories through film.
+                </p>
+              </div>
+              <div class="aboutlist">
+                <ul>
+                  <li><a href="./Homepage.html">Home</a></li>
+                  <li><a href="./prize.html">Awards</a></li>
+                  <li><a href="./rules.html">Guidelines</a></li>
+                  <li><a href="./contactus.html">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="map-location">
+              <img
+                src="./Assest/media/map.png"
+                width="auto"
+                height="auto"
+                id="mapIcon"
+              />
+              <div class="address">
+                <h2>Talentwood</h2>
+                <p>
+                  No.24 A, 3rd Main Road,<br />
+                  KK Nagar, Sreenivasapuram,<br />
+                  Guduvancherry 603 202.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="copyrights">
+          &copy; Copyright 2023 - Stage A Dream Pvt.Ltd. All right reserved
+        </h4>
+      </div>
+    </div>
+    <script src="./Script.js"></script>
+    <script src="./scriptrule.js"></script>
+  </body>
+</html>
